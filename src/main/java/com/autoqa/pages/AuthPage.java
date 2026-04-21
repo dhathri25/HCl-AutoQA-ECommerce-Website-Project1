@@ -16,6 +16,7 @@ public class AuthPage extends BasePage {
     private By loginPwd = By.xpath("//input[@data-qa='login-password']");
     private By loginBtn = By.xpath("//button[@data-qa='login-button']");
     
+    
     private By pwdField = By.id("password");
     private By fName = By.id("first_name");
     private By lName = By.id("last_name");

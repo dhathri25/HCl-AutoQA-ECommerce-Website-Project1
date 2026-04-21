@@ -18,6 +18,7 @@ public class CartPage extends BasePage {
 
     public int getCartCount() {
         return driver.findElements(cartItems).size();
+        
     }
 
     public void removeItem() {

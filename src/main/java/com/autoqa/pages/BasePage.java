@@ -29,4 +29,5 @@ public class BasePage {
     public void clickElement(By locator) {
         wait.until(ExpectedConditions.elementToBeClickable(locator)).click();
     }
+    
 }

@@ -11,6 +11,7 @@ public class ProductPage extends BasePage {
     private By viewCart = By.xpath("//u[text()='View Cart']");
 
     public ProductPage(WebDriver driver) {
+    	
         super(driver);
     }
 

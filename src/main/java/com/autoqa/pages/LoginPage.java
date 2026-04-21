@@ -19,5 +19,7 @@ public class LoginPage {
         driver.findElement(signupName).sendKeys(name);
         driver.findElement(signupEmail).sendKeys(email);
         driver.findElement(signupButton).click();
+        
+        
     }
 }

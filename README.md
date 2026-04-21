@@ -1,56 +1,66 @@
 # HCl AutoQA: E-Commerce Automation Framework
 
-## 🚀 Project Overview
-This repository contains a professional **Selenium-Java** automation framework developed for the HCL Hackathon. It automates a complete end-to-end user journey on the **Automation Exercise** website, covering everything from account creation to final order payment.
+## Project Overview
+This repository contains a professional **Selenium-Java** automation framework developed for the HCL Hackathon. The framework automates a complete end-to-end user journey on the **Automation Exercise** website, encompassing the full lifecycle from account creation to final order payment.
 
-The framework is built using the **Page Object Model (POM)** to ensure high maintainability, reusability, and scalability.
-
----
-
-## 📅 Project Execution Timeline (Rapid Deployment)
-
-This project was developed in an intensive 24-hour cycle to demonstrate agile development capabilities:
-
-* **Yesterday Morning:** Requirement analysis, framework skeleton setup (Maven, DriverFactory), and BasePage utility development.
-* **Yesterday Afternoon:** Developed **Module 1 (Authentication)** with dynamic email generation to ensure repeatable test runs.
-* **Yesterday Evening:** Developed **Module 2 (Product Search)** and **Module 3 (Cart Management)**. Integrated **TestNG Listeners** for failure handling.
-* **This Morning:** Finalized **Module 4 (Checkout & Payment)**, integrated **Extent Reports (Spark)**, and completed final regression testing and documentation.
+The architecture strictly follows the **Page Object Model (POM)** to ensure high maintainability, code reusability, and scalability.
 
 ---
 
-## 🛠 Framework Key Features
-- **Design Pattern:** Strictly followed **Page Object Model (POM)**.
-- **Reporting:** Integrated **Extent Reports** providing a detailed visual dashboard of test results.
-- **Synchronization:** Zero usage of `Thread.sleep()`. All waits are handled via **Explicit Waits (WebDriverWait)**.
-- **Configuration:** Environment variables like `URL`, `Browser`, and `Timeout` are centralized in `config.properties`.
-- **Proof of Work:** Automatic **Screenshot Capture** on test failure and order confirmation.
+## Project Execution Timeline
+This project was developed in an intensive 24-hour agile development cycle:
+
+* **Phase 1 (Morning):** Requirement analysis, Maven project setup, and development of the `BasePage` and `BaseTest` core utilities.
+* **Phase 2 (Afternoon):** Implementation of **Authentication Module** featuring dynamic email generation for repeatable testing.
+* **Phase 3 (Evening):** Development of **Product Search** and **Cart Management** modules. Integration of TestNG Listeners.
+* **Phase 4 (Final):** Completion of **Checkout & Payment** logic, integration of **Extent Reports (Spark)**, and final documentation.
 
 ---
 
-## 📂 Project Structure
-- `src/main/java/com/autoqa/pages`: Page classes containing locators and action methods.
-- `src/main/java/com/autoqa/utils`: Shared utilities like `ConfigReader` and `ExtentReportManager`.
-- `src/test/java/com/autoqa/tests`: End-to-End Test execution scripts.
-- `reports/`: Location of the generated `ExtentReport.html`.
-- `screenshots/`: Visual proof of successful execution and order placement.
+## Technical Features
+* **Design Pattern:** Page Object Model (POM) for clear separation of UI elements and test logic.
+* **Reporting:** Extent Reports (Spark) providing a graphical dashboard of test execution results.
+* **Synchronization:** Optimized performance using **Explicit Waits (WebDriverWait)** instead of static sleeps.
+* **Configuration:** Centralized management of environment variables via `config.properties`.
+* **Error Handling:** Automatic screenshot capture triggered by TestNG Listeners on test failure.
 
 ---
 
-## 🛠 Tech Stack
-- **Language:** Java 11+
-- **Automation:** Selenium WebDriver 4.x
-- **Test Runner:** TestNG
-- **Reporting:** Extent Reports (Spark Reporter)
-- **Build Tool:** Maven
+## Project Structure
+The project is organized into the following package structure:
+
+* `src/main/java/com/autoqa/pages`: Contains locators and action methods for each web page.
+* `src/main/java/com/autoqa/utils`: Shared utility classes (e.g., `ConfigReader`, `TestListener`).
+* `src/test/java/com/autoqa/tests`: TestNG execution scripts for end-to-end scenarios.
+* `reports/`: Storage for the generated `ExtentReport.html`.
+* `screenshots/`: Captured visual evidence of test execution and order confirmations.
 
 ---
 
-## 🏃 How to Run the Project
-1. Clone the repository: `git clone https://github.com/dhathri25/HCl-AutoQA-ECommerce-Website-Project1.git`
-2. Ensure Maven is installed and configured.
-3. Open the project in your IDE (Eclipse/IntelliJ).
-4. Right-click on `testng.xml` and select **Run As > TestNG Suite**.
-5. After execution, open `reports/ExtentReport.html` to view the results.
+## Tech Stack
+* **Language:** Java 11+
+* **Automation Tool:** Selenium WebDriver 4.x
+* **Test Runner:** TestNG
+* **Reporting Tool:** Extent Reports
+* **Build Management:** Maven
+
+---
+
+## Installation and Execution
+Follow these steps to run the automation suite locally:
+
+1.  **Clone the repository:**
+    ```bash
+    git clone [https://github.com/dhathri25/HCl-AutoQA-ECommerce-Website-Project1.git](https://github.com/dhathri25/HCl-AutoQA-ECommerce-Website-Project1.git)
+    ```
+2.  **Environment Setup:**
+    Ensure Java 11+ and Apache Maven are installed and configured in your system path.
+3.  **IDE Import:**
+    Import the project as a **Existing Maven Project** into Eclipse or IntelliJ IDEA.
+4.  **Run Tests:**
+    Right-click on the `testng.xml` file and select **Run As > TestNG Suite**.
+5.  **View Results:**
+    Navigate to the `reports/` folder and open `ExtentReport.html` in any web browser.
 
 ---
 *Developed by Dhathri Putty for the HCL Hackathon.*

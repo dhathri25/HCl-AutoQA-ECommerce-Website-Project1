@@ -15,5 +15,6 @@ public class LoginTest extends BaseTest {
         registerPage.enterSignupDetails("Test User", email);
         
         System.out.println("Registration Step 1 initiated for: " + email);
+        
     }
 }

@@ -15,6 +15,7 @@ The objective was to build a robust, production-ready automation suite for the "
 - **Execution Engine:** TestNG (using `testng.xml` for suite management).
 - **Reporting:** **Extent Reports (Spark)** for professional, high-level stakeholder reporting.
 
+
 ## 3. Strict Automation Strategies Applied
 As per the hackathon's "Strict Rules," the following strategies were implemented:
 - **Synchronization (Rule 5):** Strictly **Zero usage of `Thread.sleep()`**. All synchronization is handled via `WebDriverWait` (Explicit Waits) to ensure the framework is fast and non-flaky.

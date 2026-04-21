@@ -12,6 +12,7 @@ public class BaseTest {
     public Properties prop;
     public ConfigReader cr;
     public DriverFactory df;
+    
 
     @BeforeMethod
     public void setup() {
