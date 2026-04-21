@@ -11,6 +11,7 @@
             <class name="com.autoqa.tests.AuthTest"/>
             <class name="com.autoqa.tests.ProductTest"/>
         </classes>
+        
     </test>
     
 </suite>
